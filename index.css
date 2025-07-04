@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 470px;
+    height: 579px;
+    background-color: #5c63b535;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+    padding: 24px 16px;
+    border-radius: 16px;
+    box-shadow: inset 4px 4px 4px #ffffff9c,
+                inset -4px -4px 4px #00000029;
+    margin-top: 40px;
+}
+
+.screen input{
+    width: 437px;
+    height: 95px;
+    border-radius: 32px;
+    border: none;
+    box-shadow: inset 4px 4px 4px #00000029,
+                inset -4px -4px 4px #ffffff9c;
+                background-color: #aaaaaa38;
+}
+
+.panel{
+    width: 437px;
+    height: 404px;
+    padding: 10px;
+    margin-top: 32px;
+    border-radius: 32px;
+    display: flex;
+    gap: 10px;
+    align-content: center;
+    justify-content: center;
+    background-color: #ffffff01;
+    box-shadow: inset 4px 4px 4px #00000029,
+                inset -4px -4px 4px #ffffff9c;
+}
+
+.operators{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.numbers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+button{
+    width: 75.4px;
+    height: 88.5px;
+    border-radius: 16px;
+    border: none;
+    box-shadow: inset 4px 4px 4px #ffffff9c,
+                inset -4px -4px 4px #00000029;
+}
+
+button:hover{    
+    background-color: #00000027;
+}
+
+button:active{
+    background-color: #0000003a;
+
+}
+
+.plus-operator{
+    height: 187px;
+    grid-area: 3 / 1 / span 2 / span 1;
+}
