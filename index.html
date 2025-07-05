@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -14,29 +13,30 @@
         </div>
         <div class="panel">
             <div class="numbers">
-                <button onclick="displayOperation()">1</button>
-                <button onclick="displayOperation()">2</button>
-                <button onclick="displayOperation()">3</button>
-                <button onclick="displayOperation()">4</button>
-                <button onclick="displayOperation()">5</button>
-                <button onclick="displayOperation()">6</button>
-                <button onclick="displayOperation()">7</button>
-                <button onclick="displayOperation()">8</button>
-                <button onclick="displayOperation()">9</button>
-                <button onclick="displayOperation()">0</button>
-                <button onclick="displayOperation()">00</button>
-                <button onclick="displayOperation()">.</button>
+                <button onclick="buttonInput('1')">1</button>
+                <button onclick="buttonInput('2')">2</button>
+                <button onclick="buttonInput('3')">3</button>
+                <button onclick="buttonInput('4')">4</button>
+                <button onclick="buttonInput('5')">5</button>
+                <button onclick="buttonInput('6')">6</button>
+                <button onclick="buttonInput('7')">7</button>
+                <button onclick="buttonInput('8')">8</button>
+                <button onclick="buttonInput('9')">9</button>
+                <button onclick="buttonInput('0')">0</button>
+                <button onclick="buttonInput('00')">00</button>
+                <button onclick="buttonInput('.')">.</button>
             </div>
             <div class="operators">
-                <button onclick="displayOperation()">C</button>
-                <button onclick="displayOperation()">Del</button>
-                <button onclick="displayOperation()">X</button>
-                <button onclick="displayOperation()">/</button>
-                <button onclick="displayOperation()">-</button>
-                <button onclick="displayOperation()">=</button>
-                <button onclick="displayOperation()" class="plus-operator">+</button>
+                <button onclick="resetDisplay()">C</button>
+                <button onclick="deleteChar()">Del</button>
+                <button onclick="buttonInput(' * ')">X</button>
+                <button onclick="buttonInput(' / ')">/</button>
+                <button onclick="buttonInput(' - ')">-</button>
+                <button onclick="operationSubmit()">=</button>
+                <button onclick="buttonInput(' + ')" class="plus-operator">+</button>
             </div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
